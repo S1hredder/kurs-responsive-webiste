@@ -129,7 +129,13 @@ body {
   font-family: var(--ff-body);
   color: var(--clr-primary-400);
 }
-
+p:not([class]){
+opacity:0.75;
+max-width: 35ch;
+}
+p[data-width='wide'] {
+max-width: 43ch;
+}
 .button {
   display:inline-flex;
   cursor: pointer;
@@ -350,4 +356,7 @@ body {
   .display-md-inline-flex {
     display:inline-flex;
   }
+}
+.flow *+* {
+  margin-top:var(--flow-spacer,2.10em);
 }
