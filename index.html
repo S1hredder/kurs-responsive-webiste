@@ -18,7 +18,11 @@
       <div class="container">
         <p class="width"></p>
         <div class="nav-wrapper">
-          <a href="#"><img src="images/logo.svg" alt="manage" /> </a>
+          <a href="#">
+            <svg class="icon-logo" width="146" height="24">
+              <use xlink:href="images/logo.svg#logo"></use>
+            </svg>
+          </a>
           <button
             class="mobile-nav-toggle"
             aria-controls="primary-navigation"
@@ -135,35 +139,71 @@
       </section>
       <section class="cta | padding-block-700 bg-accent-400 text-neutral-100">
         <div class="container">
-          <div class="even-columns">
+          <div class="even-columns vertial-align-center">
             <div>
-              <p class="fs-secondary-heading fw-bold">
+              <p class="fs-primary-heading fw-bold">
                 Simplify how your team works today.
               </p>
             </div>
-            <div>
+            <div class="justify-self-end-md">
               <button class="button" data-type="inverted">Get Started</button>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="bg-neutral-900 text-neutral-100 padding-block-700">
+    <footer
+      class="primary-footer | bg-neutral-900 text-neutral-100 padding-block-700"
+    >
       <div class="container">
-        <div class="even-columns">
-          <div>
-            <a href="#"><img src="images/logo.svg" alt="mange" /> </a>
-            <ul role="list" arial-label="Social links">
-              <li><a arial-label="facebook" href="#"></a></li>
-              <li><a aria-label="youtube" href="#"></a></li>
-              <li><a arial-label="twitter" href="#"></a></li>
-              <li><a arial-label="pinterest" href="#"></a></li>
-              <li><a arial-label="instagram" href="#"></a></li>
+        <div class="primary-footer-wrapper">
+          <div class="primary-footer-social">
+            <a href="#" arial-label="home"
+              ><svg class="icon-logo" width="146" height="24">
+                <use xlink:href="images/logo.svg#logo"></use>
+              </svg>
+            </a>
+            <ul class="social-list" role="list" arial-label="Social links">
+              <li>
+                <a arial-label="facebook" href="#">
+                  <svg class="social-icon">
+                    <use href="images/social_icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a aria-label="youtube" href="#">
+                  <svg class="social-icon">
+                    <use href="images/social_icons.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a arial-label="twitter" href="#">
+                  <svg class="social-icon">
+                    <use href="images/social_icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a arial-label="pinterest" href="#">
+                  <svg class="social-icon">
+                    <use href="images/social_icons.svg#icon-pinterest"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a arial-label="instagram" href="#">
+                  <svg class="social-icon">
+                    <use href="images/social_icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
             </ul>
           </div>
-          <div>
-            <nav class="footer-nav">
-              <ul arial-label="footer" role="list">
+          <div class="primary-footer-nav push-right">
+            <nav class="footer-nav" style="--flow-spacer: 1rem">
+              <ul class="flow" arial-label="footer" role="list">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">Products</a></li>
@@ -174,10 +214,10 @@
               </ul>
             </nav>
           </div>
-          <div>
+          <div class="primary-footer-form push-right">
             <form action="">
               <input type="email" placeholder="Updates in your inbox…" />
-              <button class="button">Go</button>
+              <button class="button" data-shadow="none">Go</button>
             </form>
             <p>Copyright 2020. All Rights Reserved</p>
           </div>
