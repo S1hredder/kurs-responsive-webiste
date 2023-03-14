@@ -8,3 +8,12 @@ navToggle.addEventListener("click", () => {
   primaryNav.toggleAttribute("data-visible");
   primaryHeader.toggleAttribute("data-overlay");
 });
+
+const slider = tns({
+  container: ".my-slider",
+  items: 2,
+  slideBy: "page",
+  mouseDrag: true,
+  swipeAngle: false,
+  speed: 400,
+});
