@@ -11,7 +11,7 @@ navToggle.addEventListener("click", () => {
 
 const slider = tns({
   container: ".my-slider",
-  items: 2,
+  items: 3,
   slideBy: "page",
   mouseDrag: true,
   swipeAngle: false,
