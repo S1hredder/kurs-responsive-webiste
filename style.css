@@ -256,13 +256,13 @@ p[data-width='wide'] {
 /* slider */
 .my-slider > * {
   position: relative;
-  /* padding:var(--size-900) var(--size-400) var(--size-400) var(--size-600); */
-  padding: var(--size-800);
+  padding:var(--size-700) 0;
+  /* padding: var(--size-800); */
+  margin:0 var(--size-300) 0 var(--size-300);
   width: 100%;
   flex: 0 0 auto;
   background-color: var(--clr-neutral-200);
   border-radius: var(--size-300);
-
 }
 .my-slider img {
   width:var(--size-800);
@@ -272,9 +272,11 @@ p[data-width='wide'] {
   top:0%;
   transform: translateY(-50%);
 }
+/* to change oveflow images */
 .tns-ovh {
-  min-height:600px;
-  padding-top:40px;
+  /* min-height:600px; */
+  padding-top:var(--size-800);
+  gap:10rem;
 }
 /* .slider {
   display: flex;
