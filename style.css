@@ -256,10 +256,9 @@ p[data-width='wide'] {
 /* slider */
 .slider-card  {
   position: relative;
-  padding:var(--size-600) 0 var(--size-400) 0; 
-  /* margin:0 var(--size-300) 0 var(--size-300); */
+  padding: var(--size-500) 0 var(--size-200) 0;
   background-color: var(--clr-neutral-200);
-  border-radius: var(--size-300);
+  /* border-radius: var(--size-300); */
   list-style-type: none;
   -webkit-user-select: none;
   -webkit-touch-callout: none;
@@ -280,30 +279,27 @@ p[data-width='wide'] {
 }
 /* to change oveflow images */
 .tns-ovh {
-  /* min-height:600px; */
-  padding-top:var(--size-800);
+  padding-top:var(--size-500);
 }
-/* .slider {
-  display: flex;
-  list-style:none;
+/* slider button */
+.tns-nav > * {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  margin: 0 5px;
+  border-radius: 50%;
+  border: 0;
+  background: none;
+  outline:1px solid var(--clr-accent-400);
 }
-
-.slider > * {
-  position: relative;
-  padding:var(--size-900) var(--size-400) var(--size-400) var(--size-600);
-  padding: var(--size-800);
-  width: 100%;
-  flex: 0 0 auto;
-  background-color: var(--clr-neutral-200);
-  border-radius: var(--size-300);
+.tns-outer [aria-controls], .tns-outer [data-action] {
+    cursor: pointer;
 }
-.slider img {
-  width:var(--size-800);
-  position: absolute;
-  inset:0;
-  margin-inline:auto;
-  top:0%;
-  transform: translateY(-50%);
+.button-special-slider {
+  background:var(--clr-accent-400);
+}
+/* .tns-nav > [aria-controls]:target,[aria-controls]:focus,[aria-controls]:active {
+  background: red;
 } */
 /* Footer */
 .primary-footer {
@@ -602,8 +598,27 @@ line-height: 1;
 .padding-block-900 {
   padding-block: var(--size-900);
 }
+.margin-bottom-100{
+  margin-block-end:var(--size-100);
+}
+.margin-bottom-500{
+  margin-block-end:var(--size-500);
+}
+.margin-bottom-600{
+  margin-block-end:var(--size-600);
+}
 .margin-bottom-700{
   margin-block-end:var(--size-700);
+}
+@media(min-width:50em){
+  .margin-bottom-md-700{
+    margin-block-end:var(--size-700);
+  }
+}
+@media(max-width:50em){
+  .margin-bottom-sm-400{
+    margin-block-end:var(--size-400);
+  }
 }
 .container {
   --max-width: 1140px;
