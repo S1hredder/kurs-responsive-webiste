@@ -276,17 +276,18 @@ p[data-width='wide'] {
   margin-inline:auto;
   top:0%;
   transform: translateY(-50%);
+
 }
 /* to change oveflow images */
 .tns-ovh {
-  padding-top:var(--size-500);
+  padding-top:var(--size-700);
 }
 /* slider button */
 .tns-nav > * {
   width: 9px;
   height: 9px;
   padding: 0;
-  margin: 0 5px;
+  margin: var(--size-400) 0.25rem;
   border-radius: 50%;
   border: 0;
   background: none;
@@ -601,6 +602,9 @@ line-height: 1;
 .margin-bottom-100{
   margin-block-end:var(--size-100);
 }
+.margin-bottom-400{
+  margin-block-end:var(--size-400);
+}
 .margin-bottom-500{
   margin-block-end:var(--size-500);
 }
@@ -618,6 +622,15 @@ line-height: 1;
 @media(max-width:50em){
   .margin-bottom-sm-400{
     margin-block-end:var(--size-400);
+  }
+  .margin-bottom-sm-500{
+    margin-block-end:var(--size-500);
+  }
+  .margin-bottom-sm-600{
+    margin-block-end:var(--size-600);
+  }
+  .margin-bottom-sm-700{
+    margin-block-end:var(--size-600);
   }
 }
 .container {
