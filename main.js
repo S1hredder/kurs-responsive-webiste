@@ -9,11 +9,36 @@ navToggle.addEventListener("click", () => {
   primaryHeader.toggleAttribute("data-overlay");
 });
 
+// const slider = tns({
+//   container: ".my-slider",
+//   items: 1,
+//   slideBy: "page",
+//   mouseDrag: true,
+//   swipeAngle: false,
+//   speed: 150,
+//   center: true,
+//   nav: false,
+//   navPosition: "bottom",
+//   controls: false,
+//   responsive: {
+//     600: {
+//       items: 2,
+//     },
+//     800: {
+//       items: 3,
+//     },
+//   },
+// });
 const slider = tns({
   container: ".my-slider",
   items: 3,
-  slideBy: "page",
-  mouseDrag: true,
+  // center: true,
+  // loop: true,
   swipeAngle: false,
-  speed: 400,
+  speed: 800,
+  gutter: 30,
+  mouseDrag: true,
+  preventScrollOnTouch: "auto",
+  center: true,
+  animateDelay: true,
 });
