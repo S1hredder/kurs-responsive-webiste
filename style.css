@@ -713,7 +713,7 @@ line-height: 1;
   }
 }
 .container {
-  --max-width: 1140px;
+  --max-width: 1440px;
   --margin: 2rem;
   width: min(var(--max-width), 100% - var(--margin));
   margin-inline: auto;
