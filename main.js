@@ -3,64 +3,12 @@ const primaryNav = document.querySelector(".primary-navigation");
 const primaryHeader = document.querySelector(".primary-header");
 navToggle.addEventListener("click", () => {
   primaryNav.hasAttribute("data-visible")
-    ? navToggle.setAttribute("arial-expanded", false)
-    : navToggle.setAttribute("arial-expanded", true);
+    ? navToggle.setAttribute("aria-expanded", false)
+    : navToggle.setAttribute("aria-expanded", true);
   primaryNav.toggleAttribute("data-visible");
   primaryHeader.toggleAttribute("data-overlay");
 });
-
-// const slider = tns({
-//   container: ".my-slider",
-//   items: 1,
-//   slideBy: "page",
-//   mouseDrag: true,
-//   swipeAngle: false,
-//   speed: 150,
-//   center: true,
-//   nav: false,
-//   navPosition: "bottom",
-//   controls: false,
-//   responsive: {
-//     600: {
-//       items: 2,
-//     },
-//     800: {
-//       items: 3,
-//     },
-//   },
-// });
-// const sliderCard = document.querySelectorAll(".slider-card");
-// sliderCard.forEach((element) => {
-//   element.addEventListener("mousedown", () => {
-//     element.addEventListener("mousemove", () => {});
-//   });
-// });
-
-// const slider = tns({
-//   container: ".my-slider",
-//   preventScrollOnTouch: "auto",
-//   navPosition: "bottom",
-//   controls: false,
-//   autoplay: true,
-//   autoplayTimeout: 3000,
-//   autoplayButtonOutput: false,
-//   center: true,
-//   items: 1,
-//   mouseDrag: true,
-//   responsive: {
-//     900: {
-//       items: 3,
-//       speed: 200,
-//       gutter: 30,
-//       nav: false,
-//     },
-//     600: {
-//       items: 2,
-//       gutter: 30,
-//       nav: false,
-//     },
-//   },
-// });
+// slider
 const slider = tns({
   container: ".my-slider",
   items: 1,
